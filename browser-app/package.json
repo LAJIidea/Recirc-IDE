@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "dependencies": {
     "@theia/core": "latest",
+    "@theia/debug": "1.48.3",
     "@theia/editor": "latest",
     "@theia/filesystem": "latest",
     "@theia/markers": "latest",

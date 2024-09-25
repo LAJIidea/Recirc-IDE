@@ -1,7 +1,8 @@
 import { injectable } from '@theia/core/shared/inversify';
 import { MenuModelRegistry } from '@theia/core';
+// import { CommonMenus } from '@theia/core/lib/browser/common-frontend-contribution';
 import { RecircWidget } from './Recirc-widget';
-import { AbstractViewContribution } from '@theia/core/lib/browser';
+import { AbstractViewContribution, CommonMenus } from '@theia/core/lib/browser';
 import { Command, CommandRegistry } from '@theia/core/lib/common/command';
 
 export const RecircCommand: Command = { id: 'Recirc:command' };
@@ -65,6 +66,14 @@ export class RecircContribution extends AbstractViewContribution<RecircWidget> {
      * @param menus
      */
     registerMenus(menus: MenuModelRegistry): void {
-        super.registerMenus(menus);
+        // super.registerMenus(menus);
+        // menus.registerSubmenu(CommonMenus.FILE, RecircWidget.LABEL, {
+        //     order: '0'
+        // })
+        menus.registerMenuAction(CommonMenus.FILE, {
+            commandId: RecircCommand.id,
+            label: RecircWidget.LABEL,
+            order: '0'
+        })
     }
 }
