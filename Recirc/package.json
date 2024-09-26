@@ -11,7 +11,8 @@
   "dependencies": {
     "@theia/core": "latest",
     "@theia/navigator": "latest",
-    "@theia/filesystem": "latest"
+    "@theia/filesystem": "latest",
+    "@theia/workspace": "latest"
   },
   "devDependencies": {
     "rimraf": "latest",

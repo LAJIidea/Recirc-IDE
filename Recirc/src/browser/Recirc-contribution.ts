@@ -73,7 +73,7 @@ export class RecircContribution extends AbstractViewContribution<RecircWidget> {
         menus.registerMenuAction(CommonMenus.FILE, {
             commandId: RecircCommand.id,
             label: RecircWidget.LABEL,
-            order: '0'
+            order: '1'
         })
     }
 }

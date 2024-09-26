@@ -5,3 +5,13 @@
     padding: 10px;
     text-transform: uppercase;
 }
+
+.theia-icon {
+    background-image: url('../icons/Logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 4px;
+    weight: 20px;
+    height: 20px;
+}
